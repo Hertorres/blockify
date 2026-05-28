@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blockify — estamos construyendo algo increíble. Vuelve pronto." />
+    <title>Blockify — Próximamente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <main class="coming-soon">
+      <header class="coming-soon__header">
+        <span class="coming-soon__brand" aria-label="Blockify">Blockify</span>
+      </header>
+
+      <section class="coming-soon__content" aria-labelledby="status-heading">
+        <p class="coming-soon__badge">En construcción</p>
+        <h1 id="status-heading" class="coming-soon__title">
+          Algo increíble está en camino.
+        </h1>
+        <p class="coming-soon__description">
+          Estamos trabajando duro para traerte la mejor experiencia.<br />
+          Vuelve pronto.
+        </p>
+
+        <div
+          class="coming-soon__countdown"
+          aria-live="polite"
+          aria-label="Cuenta regresiva al lanzamiento"
+          data-launch-date="2026-09-01"
+        >
+          <div class="countdown__unit">
+            <span class="countdown__value" id="countdown-days">--</span>
+            <span class="countdown__label">Días</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__value" id="countdown-hours">--</span>
+            <span class="countdown__label">Horas</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__value" id="countdown-minutes">--</span>
+            <span class="countdown__label">Minutos</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__value" id="countdown-seconds">--</span>
+            <span class="countdown__label">Segundos</span>
+          </div>
+        </div>
+      </section>
+
+      <footer class="coming-soon__footer">
+        <p>&copy; <span id="current-year"></span> Blockify. Todos los derechos reservados.</p>
+      </footer>
+    </main>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
